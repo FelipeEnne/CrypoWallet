@@ -15,11 +15,9 @@ namespace :dev do
         %x(rails db:migrate)
       end
 
-      
-      %x(rails dev:add_coins)
       %x(rails dev:add_mining_types)
-
-
+      %x(rails dev:add_coins)
+      
     else
       puts "fora de ambiente de desenvolvimento"
     end
@@ -33,19 +31,22 @@ namespace :dev do
         {
             description: "Bitcoin" ,
             acronym: "BTC",
-            url_image: "https://cdn4.iconfinder.com/data/icons/logos-and-brands/512/45_Bitcoin_logo_logos-512.png"
+            url_image: "https://cdn4.iconfinder.com/data/icons/logos-and-brands/512/45_Bitcoin_logo_logos-512.png",
+            mining_type: MiningType.find_by(acronym: 'PoW')
         },
         
         {
             description: "Ethereum" ,
             acronym: "ETH",
-            url_image: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/ETHEREUM-YOUTUBE-PROFILE-PIC.png/600px-ETHEREUM-YOUTUBE-PROFILE-PIC.png"
-        },
+            url_image: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/ETHEREUM-YOUTUBE-PROFILE-PIC.png/600px-ETHEREUM-YOUTUBE-PROFILE-PIC.png",
+            mining_type: MiningType.all.sample
+       },
 
         {
             description: "Dash" ,
             acronym: "DASH",
-            url_image: "https://i.pinimg.com/originals/b0/f5/ff/b0f5ff13b6449d68d7038bee35a1c6eb.png"
+            url_image: "https://i.pinimg.com/originals/b0/f5/ff/b0f5ff13b6449d68d7038bee35a1c6eb.png",
+            mining_type: MiningType.all.sample
         }
         ]
 
