@@ -1,8 +1,13 @@
 <h1>Seja bem vindo</h1>
+<p>O idioma usado nessa aplicação é: <strong> <%= locale %> </strong> </p>
+
+<p> <%= t('hello')%>
+
+<p><strong>Data:</strong> <%= l(Date.today)%></p>
 
 <%= render "menu"%>
 
-<p><strong>Data:</strong> <%= date_br(Date.today)%></p>
+
 
 
 <p>Ambiente <strong><%= Rails.env%></strong></p>
