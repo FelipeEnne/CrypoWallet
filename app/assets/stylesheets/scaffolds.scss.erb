@@ -1,5 +1,6 @@
 body {
-  background-color: #fff;
+  background-color: <%= Rails.env.development? ? '#ffff0014' : 'red' %>;
+  background-image: asset-url('images.jpeg');
   color: #333;
   margin: 33px;
   font-family: verdana, arial, helvetica, sans-serif;
