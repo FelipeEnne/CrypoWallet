@@ -38,10 +38,7 @@ gem 'bootsnap', '>= 1.1.0', require: false
 gem 'tty-spinner'
 gem 'rails-i18n', '~> 5.1'
 #gem 'railties', '~> 6'
-source "https://rails-assets.org" do
-  gem "rails-assets-jquery"
-  gem "rails-assets-notifyjs"
-end
+
 
 
 group :development, :test do
