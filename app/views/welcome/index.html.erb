@@ -1,17 +1,12 @@
-<p><%= link_to 'Idioma Português', root_path(locale: 'pt-BR') %></p>
-<p><%= link_to 'English', root_path(locale: 'en') %></p>
-<h1>Seja bem vindo</h1>
-<p>O idioma usado nessa aplicação é: <strong> <%= t('actual_locale') %> </strong> </p>
-
-<p> <%= t('hello')%>
-
-<p><strong>Data:</strong> <%= l(Date.today)%></p>
-
-<%= render "menu"%>
+<div class="jumbotron">
+  <h1 class="display-4">Seja bem vindo</h1>
+  <p class="lead">Este é o Crypto Wallet - Cripto App </p>
+  <hr class="my-4">
+  <p>Selecione uma opção</p>
+  <%= render "menu"%>
+</div>
 
 
 
 
-<p>Ambiente <strong><%= Rails.env%></strong></p>
 
-<p>Nome <strong><%= @nome %></strong></p>
