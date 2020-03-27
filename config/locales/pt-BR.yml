@@ -4,7 +4,10 @@ pt-BR:
   welcome_msg: "Este é o Crypto Wallet - Cripto App"
   menu_msg: "Selecione uma opção"
   hello: "Olá mundo"
+  msg:
+    confirm: "Tem certeza?"
   links:
     edit: "Editar"
     show: "Mostrar"
     delete: "Apagar"
+    new: "Novo"

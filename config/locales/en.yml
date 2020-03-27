@@ -35,7 +35,10 @@ en:
   welcome_msg: "This is the Crypto Wallet - Cripto App"
   menu_msg: "Select an option"
   hello: "Hello world"
+  msg:
+    confirm: "Are you sure?"
   links:
     edit: "Edit"
     show: "Show"
     delete: "Delete"
+    new: "New"
